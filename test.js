@@ -42,16 +42,16 @@ console.log("\n--- Problem 2 ---");
 console.log(createStudent("Alex", 11, 3.7));
 console.log(createStudent("Sam", 10, 2.9)); */
 
-function findByName(Students, targetName){
-const ChenZee = {
-  name: targetName,
-  grade: 12
-  gpa: 3.5
-  Is Honors: true
-}
 
+function findByName(Students, targetName){
+  if (targetName.find === 'ChenZee');
+ return ChenZee = {
+  name: targetName,
+  grade: 12,
+  gpa: 3.5,
+  IsHonors: false,
+ }
 }
-console.log("\n--- Problem 3 ---");
 console.log(findByName(students, "ChenZee"));
 console.log(findByName(students, "Jane"));
 console.log(findByName(students, "Marcus"));
