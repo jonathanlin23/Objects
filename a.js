@@ -1,5 +1,3 @@
-function filter(Array,Category) []
-function AddToCart(Cart,item)
 
 const products = [
 {   name: "Black Basketball Shoes",
@@ -70,8 +68,8 @@ const products = [
     category: "Clarks",
     price: 90,
 },
-{   name: "Black Clogs",
-    category: "Birkenstocks",
+{   name: "Tan Boots",
+    category: "Timberland",
     price: 200,
 },
 {   name: "Pink Football Cleats",
@@ -83,3 +81,39 @@ const products = [
     price: 115,
 },
 ]
+
+const Jordans = products.filter(product => product.category === "Jordan");
+console.log(Jordans);
+const Nike = products.filter(product => product.category === "Nike");
+console.log(Nike);
+const Adidas = products.filter(product => product.category === "Adidas");
+console.log (Adidas);
+const Clarks = products.filter(product => product.category === "Clarks")
+console.log (Clarks);
+const Reebok = products.filter(product => product.category === "Reebok")
+console.log (Reebok);
+const Timberland = products.filter(product => product.category === "Timberland")
+console.log (Timberland);
+const Salomon = products.filter(product => product.category === "Salomon")
+console.log (Salomon);
+const Under Armour = products.filter(product => product.category === "Under Armour")
+console.log (Under Armour);
+const New Balance = products.filter(product => product.category === "New Balance")
+console.log (New Balance);
+
+function cart() {
+    let cart = [];
+    return{
+        addItem: function (item){
+            cart.push(item);
+            console.log(`${item} has been added to cart`);
+        },
+        removeItem: function (item){
+            cart.splice(cart.indexOf(item), 1);
+            console.log(`${item} has been removed from cart`);
+        }
+    }
+}
+const myCart = cart();
+myCart.addItem("Black Basketball Shoes");
+myCart.removeItem("Black Basketball Shoes");
